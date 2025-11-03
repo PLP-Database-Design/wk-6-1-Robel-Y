@@ -10,20 +10,20 @@ The main objective of testing is to ensure that all Bookstore application compon
 ## Scope(In-scope)
 Testing will mainly focus on these key features:
 
-a. User registration and authentication
-b. Book catalog and search functionality
-c. Shopping cart and checkout process
-d.  Inventory and order tracking
-e. Payment integration (Paystack test mode)
+1. User registration and authentication
+2. Book catalog and search functionality
+3. Shopping cart and checkout process
+4.  Inventory and order tracking
+5. Payment integration (Paystack test mode)
 
 ## Out of Scope
 Some parts of the system won’t be tested in this phase to keep things focused and manageable:
 
-a. Real Paystack payments (only test mode will be used)  
-b. Performance/load testing
-c. Email notifications and password recovery  
-d. Admin analytics and sales reports  
-e. Mobile app version (only the web version is covered)
+1. Real Paystack payments (only test mode will be used)  
+2. Performance/load testing
+3. Email notifications and password recovery  
+4. Admin analytics and sales reports  
+5. Mobile app version (only the web version is covered)
 
 ## Testing Types
 We’ll use different types of testing to make sure all aspects of the app are covered:
