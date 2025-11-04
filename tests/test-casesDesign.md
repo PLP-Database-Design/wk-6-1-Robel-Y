@@ -1,10 +1,10 @@
 # Test Case Design Document
 
-**Project Name:** Bookstore App  
-** Team Name:** GTRs Testers
-**Phase:** Phase 2 – Test Planning and Design  
-**Author:** DvChege  
-**Date:** November 2025  
+## Project Name: Bookstore App  
+## Team Name: GTRs Testers
+## Phase: Phase 2 – Test Planning and Design  
+##  Author: DvChege  
+## Date: November 2025  
 
 
 ## 1. Introduction
