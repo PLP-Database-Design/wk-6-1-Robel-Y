@@ -1,58 +1,72 @@
-# Phase 2 Test Cases – Bookstore Application
+# Phase 2 - Test Case Design & Execution  
 **Team:** GTRs Testers  
+**Application:** Bookstore App  
 **Tester:** DvChege  
 **Date:** November 2025  
 
-This document contains the UI and Functional test cases executed during Phase 2.
 
 ---
 
 ## 1. UI Test Cases
 
-| TC ID | UI Element | Steps | Expected Result | Status |
-|------|------------|--------|----------------|--------|
-| UI001 | Homepage Layout | Open the homepage. | Page loads with header, search bar, and book grid. | Not Tested |
-| UI002 | Book Cards Layout | Scroll through the book list. | Each book card displays: Image, Title, Author, Price, Button. | Not Tested |
-| UI003 | Image Rendering | Inspect multiple book covers. | All images load without broken links. | Not Tested |
-| UI004 | Search Bar UI | Observe search input box. | Search bar is visible, aligned, and usable. | Not Tested |
-| UI005 | Responsive Layout | Resize browser to mobile width. | Book cards stack vertically without overlapping UI. | Not Tested |
+| Test Case ID | Screen/Module | UI Element | Test Objective | Steps | Expected Result | Status |
+|--------------|---------------|------------|----------------|-------|----------------|--------|
+| UI-001 | Home Page | Book List Grid | Verify books are displayed in grid layout | 1. Open Home Page | Books appear in card layout with image + title + price | Not Executed |
+| UI-002 | Home Page | Navbar | Check whether navbar is visible and correctly aligned | 1. Open Home Page | Navbar appears at top and is readable | Not Executed |
+| UI-003 | Home Page | Search Bar | Verify search input visibility | 1. Open Home Page | Search bar is visible and allows typing | Not Executed |
+| UI-004 | Home Page | Book Cards | Check card spacing and readability | 1. Observe book cards | Cards are spaced evenly and not overlapping | Not Executed |
+| UI-005 | Cart Icon | Cart Badge | Verify badge updates when cart has items | 1. Add item to cart | Badge increments to reflect cart count | Not Executed |
+| UI-006 | Cart Page | Item table/list | Ensure cart items display properly | 1. Open Cart Page | Items show image + price + quantity buttons | Not Executed |
+| UI-007 | Buttons | Add to Cart Button | Confirm button visibility and usability | 1. Check any book card | Button is clear, clickable and styled | Not Executed |
+| UI-008 | Checkout Page | Form layout | Verify address/payment details display correctly | 1. Proceed to checkout | Fields aligned and readable | Not Executed |
+| UI-009 | Login Page | Input Field Alignment | Confirm email/password fields align correctly | 1. Open Login Page | Inputs are aligned and labeled | Not Executed |
+| UI-010 | Login Page | Error Message Display | Check error colors and visibility | 1. Enter invalid credentials | Error displays clearly in visible color | Not Executed |
+
 
 ---
 
-## 2. Functional Test Cases
+## 2. Functional Test Case Design
 
-| TC ID | Feature | Precondition | Steps | Expected Result | Status |
-|------|---------|--------------|--------|----------------|--------|
-| FN001 | Load Book Catalog | Browser open | Navigate to homepage. | List of books loads successfully. | Not Tested |
-| FN002 | Search – Exact Match | Homepage loaded | Search using full book title. | Matching book(s) appear. | Not Tested |
-| FN003 | Search – Partial Match | Homepage loaded | Search using a partial title. | Relevant matches appear. | Not Tested |
-| FN004 | Search – Case Insensitive | Homepage loaded | Search using lowercase / uppercase variations. | Same results regardless of typing case. | Not Tested |
-| FN005 | Search No Results | Homepage loaded | Enter random text (ex: "zzzz"). | Display message: “No books found.” | Not Tested |
-| FN006 | Clear Search Results | Search performed | Remove text in search bar. | Original full book list is shown. | Not Tested |
-| FN007 | Buy Button Click | Book list visible | Click “Buy Now” on any book. | *No action occurs* (Feature not implemented yet). | Known Limitation |
+| Test Case ID | Module | Test Objective | Pre-Condition | Test Steps | Expected Result | Status |
+|--------------|---------|---------------|---------------|------------|----------------|--------|
+| TC-001 | Login | Verify user can login successfully | User account exists | 1. Open Login Page 2. Enter valid email/password 3. Click Login | Redirects to homepage | Not Executed |
+| TC-002 | Login | Verify login fails for invalid credentials | None | 1. Enter invalid credentials 2. Click Login | Error message appears | Not Executed |
+| TC-003 | Book Catalog | Verify books display correctly | App running | 1. Open Home Page 2. Scroll book list | Books show with correct details | Not Executed |
+| TC-004 | Search | Verify search functionality filters correctly | Books available | 1. Enter search keyword 2. Click Search | Only matching books appear | Not Executed |
+| TC-005 | Cart | Verify adding a book to cart adds correct entries | User logged in | 1. Select any book 2. Click Add to Cart | Book appears in cart | Not Executed |
+| TC-006 | Cart | Verify changing quantity updates total | Item already in cart | 1. Change quantity from 1→2 | Total updates correctly | Not Executed |
+| TC-007 | Checkout | Verify checkout page loads | Items in cart | 1. Click Checkout | Checkout summary appears | Not Executed |
+| TC-008 | Payments | Verify payment with Paystack test mode | Checkout reached | 1. Click Pay 2. Enter test card 3. Confirm | Payment Success screen appears | Not Executed |
+| TC-009 | Order Confirmation | Verify order receipt displays | Payment completed | 1. Wait for redirect | Receipt displays with Order ID | Not Executed |
+| TC-010 | Logout | Verify logout redirects user | Logged in user | 1. Click Logout | User returns to login page | Not Executed |
 
----
-
-## 3. Defect Log
-
-| Defect ID | Module | Description | Steps to Reproduce | Expected Result | Actual Result | Severity | Status |
-|-----------|--------|-------------|-------------------|----------------|---------------|----------|--------|
-| D001 | Book Details Page | Clicking a book does not open details. | Click any book. | Book details page should open. | Nothing happens. | High | Open |
-| D002 | Cart Feature | “Buy Now” button does not trigger any function. | Click “Buy Now”. | Should add to cart or start checkout. | No behavior. | Medium | Open |
 
 ---
 
-## 4. Test Execution Summary
+## 3. Test Execution Report
 
-| Test Case ID | Date | Tester | Result (Pass/Fail) | Notes |
-|--------------|------|--------|-------------------|-------|
-| UI001 |  |  |  |  |
-| UI002 |  |  |  |  |
-| FN001 |  |  |  |  |
-| FN002 |  |  |  |  |
-| FN005 |  |  |  |  |
-| FN007 |  |  |  | Known feature missing |
+| Test Case ID | Executed By | Date Executed | Result (Pass/Fail) | Notes |
+|--------------|-------------|---------------|--------------------|-------|
+| UI-001 | | | | |
+| UI-002 | | | | |
+| UI-003 | | | | |
+| UI-004 | | | | |
+| UI-005 | | | | |
+| UI-006 | | | | |
+| UI-007 | | | | |
+| UI-008 | | | | |
+| UI-009 | | | | |
+| UI-010 | | | | |
+| TC-001 | | | | |
+| TC-002 | | | | |
+| TC-003 | | | | |
+| TC-004 | | | | |
+| TC-005 | | | | |
+| TC-006 | | | | |
+| TC-007 | | | | |
+| TC-008 | | | | |
+| TC-009 | | | | |
+| TC-010 | | | | |
 
 ---
 
-### ✅ End of Phase 2 Test Case Document
