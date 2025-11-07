@@ -1,82 +1,34 @@
-# Bookstore Project - Test Plan Document
-**Team Name:** GTRs Testers
+# Bookstore Application – Phase 1 Requirements & System Overview
 
-## Introduction
-This Test Plan document defines the testing strategy, objectives, scope, test environment, and responsibilities for the Bookstore application. The system is an e-commerce web application that allows users to browse books, add them to a cart, and simulate a checkout using the Paystack payment integration.
+## 1. Introduction
+The Bookstore Web Application allows users to browse a collection of books displayed on the homepage. Users can search for books by title using the built-in search bar. The system currently operates without authentication, cart system, or administrative dashboard.
 
-## Objectives
-The main objective of testing is to ensure that all Bookstore application components function correctly, meet business requirements, and provide a smooth and error-free user experience. confusing behavior.
+This document outlines the key requirements gathered during Phase 1 and forms the basis for test planning and execution in Phase 2.
 
-## Scope(In-scope)
-Testing will mainly focus on these key features:
+## 2. System Objectives
+- Display a list of books to users in a clear and visually appealing layout.
+- Allow users to search for books using a search field.
+- Ensure consistent UI behavior and responsiveness across supported devices.
 
-1. User registration and authentication
-2. Book catalog and search functionality
-3. Shopping cart and checkout process
-4.  Inventory and order tracking
-5. Payment integration (Paystack test mode)
+## 3. Current Functionality (Scope of Phase 1)
+| Feature | Description | Status |
+|--------|-------------|--------|
+| Book Listing | Displays all available books on homepage with image, name, author, and price. | Implemented |
+| Book Search | Allows users to search by book title. | Implemented |
+| Product Detail Page | View more information about a book. | Not Implemented (Out of Scope) |
+| Cart and Checkout | Add to cart, remove, order checkout. | Not Implemented (Future Phase) |
+| User Authentication | Login / Register | Not Implemented |
+| Admin Dashboard | Manage books, inventory, sales. | Not Implemented |
 
-## Out of Scope
-Some parts of the system won’t be tested in this phase to keep things focused and manageable:
+## 4. Non-Functional Requirements
+- UI must be user-friendly and fast-loading.
+- Application should follow a clean and minimalist design style.
+- Search should provide results instantly without page reload.
 
-1. Real Paystack payments (only test mode will be used)  
-2. Performance/load testing
-3. Email notifications and password recovery  
-4. Admin analytics and sales reports  
-5. Mobile app version (only the web version is covered)
+## 5. Tools and Technologies
+- **Frontend:** React / HTML / CSS (as seen in UI)
+- **Data Source:** Mock Data JSON (Assumed from screenshots)
+- **Hosting (Future):** To be determined
 
-## Testing Types
-We’ll use different types of testing to make sure all aspects of the app are covered:
-
-- **Functional Testing** – To confirm each feature works as expected  
-- **Integration Testing** – To verify that different modules work well together  
-- **UI/UX Testing** – To check design consistency and usability  
-- **Regression Testing** – To make sure fixes don’t break other parts of the app  
-- **Acceptance Testing** – Final testing to confirm the system meets user needs  
-
-## Test Environment
-Testing will be done on a **local environment** using **Node.js** and **React**.  
-
-- URL: `http://localhost:3000/`  
-- Payment: Paystack (test mode only)  
-- Test Data: Manually created sample data  
-- Browser: Chrome, Firefox, and Edge (latest versions)  
-
-## Test Deliverables
-- Test Plan Document 
-- Test Cases and Checklists
-- Defect Log
-- Final Test Report
-- Project Board (GitHub) with test activities
-
-## Entry and Exit Criteria
-
-Entry Criteria:
-- Repository setup completed
-- Application runs locally
-- Test environment configured
-
-Exit Criteria:
-- All planned test cases executed
-- All critical and high-priority defects resolved
-- Test report reviewed and approved
-
-## Risks and Mitigation
-| Risk | Impact | Mitigation |
-|------|---------|------------|
-| Unstable internet connection | May interrupt online calls | Use offline testing where possible and retry failed calls |
-| Paystack test API downtime | Blocks checkout testing | Mock API responses to simulate transactions |
-| Incomplete or outdated test data | May lead to inconsistent results | Refresh test data before execution |
-| Time constraints | May reduce testing depth | Prioritize high-risk and core user flows first |
-
-## Schedule
-Phase 1: Planning & Setup – Due November 5, 2025
-Phase 2: Test Design & Early Execution – Due November 11, 2025
-Phase 3: Final Execution & Reporting – Due November 18, 2025
-
-## Approval
-Prepared By: DvChege
-Date: November 3, 2025
-Approved By: Robel Yihelu & Emmaculate Mumbua 
-
----
+## 6. Conclusion
+Phase 1 successfully delivered the core browsing and search functionalities. Future phases will expand the system to include cart, authentication, and admin management.
