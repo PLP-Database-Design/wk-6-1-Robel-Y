@@ -39,7 +39,7 @@ This document focuses on catalog browsing, shopping cart functionality, checkout
 | TC010 | Search | Search for a product that does not exist | Message displayed: “No results found” | Low |
 | TC011 | Session Handling | Close and reopen browser | Cart resets (guest session does not persist data unless session storage is implemented) | Medium |
 
-> **Removed Test Cases:** Login & Admin Access — not applicable for this system.
+.
 
 ---
 
