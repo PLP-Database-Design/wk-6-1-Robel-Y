@@ -11,7 +11,6 @@
 
 | Bug ID | Summary | Severity / Priority | Environment | Affected FR Code(s) | Steps to Reproduce | Expected Result | Actual Result | Attachments / Notes |
 |--------|---------|-------------------|-------------|-------------------|-----------------|----------------|---------------|-------------------|
-
 | BUG-001 | “Buy Now” adds to cart without user feedback | Major | Firefox 128, macOS 14 | FR-O01 / FR-O02 | 1. Click "Buy Now" on a book | User sees confirmation / cart badge increments | Book added silently; user unaware | - |
 | BUG-002 | Invalid city input accepted | Major | Chrome 129, Windows 10 | FR-O02 | 1. Enter city not in country → 2. Submit shipping form | Validation prevents submission | Form accepts invalid city | - |
 | BUG-003 | Book/author images not responsive | Major | Chrome 129, Android 12 | FR-O04 / FR-O01 | 1. Click book image or author in catalog | Opens book details | Nothing happens | - |
