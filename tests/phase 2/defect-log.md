@@ -1,10 +1,10 @@
-# Book Store App — Defect Log
+# Phase 2 - Defect Log Report
 
-## PHASE 2
-## Team Name: GTRs Testers
-**Prepared By:** Emmaculate Mumbua 
+## Team: GTRs Testers
+**Application:** Bookstore App  
+**Tester:** Emmaculate Mumbua   
+**Date:** November 2025 
 **Environment:** Chrome 129 / Firefox 128 / Edge 128, Windows 10/11, macOS 14, Android 12  
-
 ---
 
 ## Defect Table
