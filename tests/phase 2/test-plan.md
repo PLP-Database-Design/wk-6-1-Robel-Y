@@ -122,7 +122,7 @@ During Phase 2, the team collaborated on test planning, UI evaluation, test docu
 | **Bashir** | 10 | 9 | 10 | **9.7** |
 | **Robel** |4 | 2 | 2 |**5.5**|
 
-> Both members contributed effectively. Emma led coordination and defect management; Bashir led documentation and UI/functional structuring.
+>  Members contributed effectively. Emma led coordination and defect management; Bashir led documentation and UI/functional structuring and Robel executed results.
 
 ---
 
