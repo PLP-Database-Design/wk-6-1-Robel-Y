@@ -62,7 +62,7 @@ The following features are *not* currently implemented and therefore will not be
 | `test-cases.md` | UI and Functional test cases |
 | `test-execution.md` | Execution results (Pass / Fail) |
 | `defect-log.md` | List of defects found during testing |
-| `screenshots/` | Screenshots of executed test results |
+| `screenshots/` | Evidence of executed test results |
 
 ---
 
@@ -76,18 +76,6 @@ The following features are *not* currently implemented and therefore will not be
 No automation testing is included in this phase.
 
 ---
-## 9. UI/UX Considerations
-The testing in this phase also evaluates the usability and visual quality of the Bookstore Application.  
-This includes:
-
-- Clarity and readability of fonts and text
-- Consistency of spacing and layout across devices
-- Visibility and usability of the search bar
-- Proper display of book cards (Image, Title, Author, Price)
-- User experience when searching (results appear in real time)
-
-A clean and simple UI is expected to help users navigate and find books efficiently.
-
 
 ## 8. Risks & Assumptions
 | Risk | Impact | Mitigation |
@@ -98,7 +86,46 @@ A clean and simple UI is expected to help users navigate and find books efficien
 
 ---
 
-## 9. Approval
+## 9. UI/UX Considerations
+UI/UX Testing focuses on usability and visual quality:
+
+- Consistency of font sizes and spacing
+- Clear and readable text
+- Image and card alignment
+- Search bar usability and visibility
+- Responsiveness across devices
+
+A clean UI helps support easier user navigation and book discovery.
+
+---
+
+## 10. Team Contribution Statement – Phase 2
+
+During Phase 2, the team collaborated on test planning, UI evaluation, test documentation, and defect tracking.
+
+| Team Member | Responsibilities Completed |
+|------------|----------------------------|
+| **Emma** | - Created and assigned team roles  
+- Reviewed the Test Plan and Test Cases  
+- Created and maintained the Defect Log  
+- Logged and updated identified defects in GitHub |
+| **Bashir** | - Designed and documented the Test Cases  
+- Created the UI/UX Functional Design Checklist  
+- Structured and organized Test Execution approach  
+- Assisted in defect tracking and documentation |
+
+### Team Scoring
+
+| Team Member | Contribution Quality (1–10) | Participation (1–10) | Reliability (1–10) | **Final Score (Avg)** |
+|------------|-----------------------------|----------------------|--------------------|----------------------|
+| **Emma** | 9 | 8 | 9 | **8.7** |
+| **Bashir** | 10 | 9 | 10 | **9.7** |
+
+> Both members contributed effectively. Emma led coordination and defect management; Bashir led documentation and UI/functional structuring.
+
+---
+
+## 11. Approval
 | Name | Role | Signature | Date |
 |------|------|-----------|------|
 | DvChege | Tester | — | — |
