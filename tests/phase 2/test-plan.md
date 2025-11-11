@@ -109,7 +109,7 @@ During Phase 2, the team collaborated on test planning, UI evaluation, test docu
 - Reviewed the Test Plan and Test Cases  
 - Created and maintained the Defect Log  
 - Logged and updated identified defects in GitHub |
-| **Bashir** | - Designed and documented the Test Cases  
+| **DvChege** | - Designed and documented the Test Cases  
 - Created the UI/UX Functional Design Checklist  
 - Structured and organized Test Execution approach  
 - Assisted in defect tracking and documentation |
@@ -119,10 +119,10 @@ During Phase 2, the team collaborated on test planning, UI evaluation, test docu
 | Team Member | Contribution Quality (1–10) | Participation (1–10) | Reliability (1–10) | **Final Score (Avg)** |
 |------------|-----------------------------|----------------------|--------------------|----------------------|
 | **Emma** | 9 | 8 | 9 | **8.7** |
-| **Bashir** | 10 | 9 | 10 | **9.7** |
+| **DvChege** | 10 | 9 | 10 | **9.7** |
 | **Robel** |4 | 2 | 2 |**5.5**|
 
->  Members contributed effectively. Emma led coordination and defect management; Bashir led documentation and UI/functional structuring and Robel executed results.
+>  Members contributed effectively. Emma led coordination and defect management;DvChege led documentation and UI/functional structuring and Robel executed results.
 
 ---
 
