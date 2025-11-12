@@ -34,27 +34,24 @@
 
 | Test Case ID | Module | Test Objective | Pre-Condition | Test Steps | Expected Result | Status |
 |--------------|--------|----------------|---------------|------------|----------------|--------|
-| TC-001 | Login | Verify login fails for invalid credentials | None | 1. Enter invalid credentials 2. Click Login | Error message displayed | Not Executed |
-| TC-002 | Login | Verify login success for valid credentials | Registered user | 1. Enter valid credentials 2. Click Login | User redirected to Home Page | Not Executed |
-| TC-003 | Login | Password reset functionality | Registered user | 1. Click Forgot Password 2. Enter email 3. Submit | Password reset link sent | Not Executed |
-| TC-004 | Book Catalog | Display books correctly | App running | 1. Open Home Page 2. Scroll | Books appear with correct details | Not Executed |
-| TC-005 | Book Catalog | Sorting by price/title | Books available | 1. Click sort dropdown | Books sorted correctly | Not Executed |
-| TC-006 | Book Catalog | Filtering by category | Books available | 1. Select category filter | Only category books shown | Not Executed |
-| TC-007 | Search | Search filters correctly | Books available | 1. Enter keyword 2. Click Search | Matching books displayed | Not Executed |
-| TC-008 | Search | No results message | Books available | 1. Enter invalid keyword | “No results found” displayed | Not Executed |
-| TC-009 | Search | Case-insensitive search | Books available | 1. Enter uppercase/lowercase keyword | Correct books displayed | Not Executed |
-| TC-010 | Cart | Add book to cart | User logged in | 1. Select book 2. Click Add to Cart | Book appears in cart | Not Executed |
-| TC-011 | Cart | Update quantity | Item in cart | 1. Increase/decrease quantity | Total updates correctly | Not Executed |
-| TC-012 | Cart | Remove item | Item in cart | 1. Click Remove | Item removed, total updates | Not Executed |
-| TC-013 | Cart | Empty cart checkout | Cart empty | 1. Click Checkout | Warning/error displayed, prevent checkout | Not Executed |
-| TC-014 | Checkout | Load checkout page | Items in cart | 1. Click Checkout | Checkout summary visible | Not Executed |
-| TC-015 | Payments | Successful payment | Checkout reached | 1. Pay via test card | Success screen with Order ID | Not Executed |
-| TC-016 | Payments | Failed payment | Checkout reached | 1. Enter invalid card 2. Click Pay | Error message displayed | Not Executed |
-| TC-017 | Order | Order receipt displayed | Payment completed | 1. Wait for redirect | Receipt with order details displayed | Not Executed |
-| TC-018 | Wishlist | Add to wishlist | User logged in | 1. Click Add to Wishlist | Book added to wishlist | Not Executed |
-| TC-019 | Wishlist | Remove from wishlist | Book in wishlist | 1. Remove book | Book removed | Not Executed |
-| TC-020 | Account | Update profile | User logged in | 1. Edit profile 2. Save | Changes reflected correctly | Not Executed |
-| TC-021 | Session | Session expiration | User logged in | 1. Stay idle 30 mins | User logged out, redirected to login | Not Executed |
+| TC-001 | Book Catalog | Display books correctly | App running | 1. Open Home Page 2. Scroll | Books appear with correct details | Not Executed |
+| TC-002 | Book Catalog | Sorting by price/title | Books available | 1. Click sort dropdown | Books sorted correctly | Not Executed |
+| TC-003 | Book Catalog | Filtering by category | Books available | 1. Select category filter | Only category books shown | Not Executed |
+| TC-004 | Search | Search filters correctly | Books available | 1. Enter keyword 2. Click Search | Matching books displayed | Not Executed |
+| TC-005 | Search | No results message | Books available | 1. Enter invalid keyword | “No results found” displayed | Not Executed |
+| TC-006 | Search | Case-insensitive search | Books available | 1. Enter uppercase/lowercase keyword | Correct books displayed | Not Executed |
+| TC-007 | Cart | Add book to cart | User logged in | 1. Select book 2. Click Add to Cart | Book appears in cart | Not Executed |
+| TC-008 | Cart | Update quantity | Item in cart | 1. Increase/decrease quantity | Total updates correctly | Not Executed |
+| TC-009 | Cart | Remove item | Item in cart | 1. Click Remove | Item removed, total updates | Not Executed |
+| TC-010 | Cart | Empty cart checkout | Cart empty | 1. Click Checkout | Warning/error displayed, prevent checkout | Not Executed |
+| TC-011 | Checkout | Load checkout page | Items in cart | 1. Click Checkout | Checkout summary visible | Not Executed |
+| TC-012 | Payments | Successful payment | Checkout reached | 1. Pay via test card | Success screen with Order ID | Not Executed |
+| TC-013 | Payments | Failed payment | Checkout reached | 1. Enter invalid card 2. Click Pay | Error message displayed | Not Executed |
+| TC-014 | Order | Order receipt displayed | Payment completed | 1. Wait for redirect | Receipt with order details displayed | Not Executed |
+| TC-015 | Wishlist | Add to wishlist | User logged in | 1. Click Add to Wishlist | Book added to wishlist | Not Executed |
+| TC-016 | Wishlist | Remove from wishlist | Book in wishlist | 1. Remove book | Book removed | Not Executed |
+| TC-017 | Account | Update profile | User logged in | 1. Edit profile 2. Save | Changes reflected correctly | Not Executed |
+| TC-018 | Session | Session expiration | User logged in | 1. Stay idle 30 mins | User logged out, redirected to login | Not Executed |
 
 </details>
 
