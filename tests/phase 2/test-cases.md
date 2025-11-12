@@ -27,7 +27,6 @@
 
 | Test Case ID | Module | Test Objective | Pre-Condition | Test Steps | Expected Result | Status |
 |--------------|---------|---------------|---------------|------------|----------------|--------|
-
 | TC-001 | Login | Verify login fails for invalid credentials | None | 1. Enter invalid credentials 2. Click Login | Error message appears | Not Executed |
 | TC-002 | Book Catalog | Verify books display correctly | App running | 1. Open Home Page 2. Scroll book list | Books show with correct details | Not Executed |
 | TC-003 | Search | Verify search functionality filters correctly | Books available | 1. Enter search keyword 2. Click Search | Only matching books appear | Not Executed |
