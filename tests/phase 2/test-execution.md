@@ -39,7 +39,7 @@ This report documents the execution results of all UI and Functional test cases 
 | PN003 | Performance/Network test case 3 |  |  |  |  |  |
 | PN004 | Performance/Network test case 4 |  |  |  |  |  |
 
-> **Note:** Add additional test cases as needed, using the same format.
+
 
 ---
 
