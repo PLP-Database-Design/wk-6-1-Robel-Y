@@ -1,42 +1,53 @@
-# Phase 3 – Test Execution Report  
+# Test Execution Report – Bookstore Application (Phase 2 & 3)
+
 **Team:** GTRs Testers  
-**Application:** Bookstore App  
 **Tester:** DvChege  
 **Date:** November 2025  
 
----
-
-## 1. Objective
-This document records the actual execution of all UI and functional test cases for the Bookstore Application. Evidence is captured through screenshots demonstrating application behavior during testing.
+This report documents the execution results of all UI and Functional test cases for the Bookstore Application, including Pass/Fail status, defects, and observations.
 
 ---
 
-## 2. Test Execution Summary
+## 1. Test Execution Table
 
-| Test Case ID | Module | Test Description | Expected Result | Actual Result | Status | Evidence |
-|---------------|---------|------------------|-----------------|----------------|---------|-----------|
-| TC01 | Book Listing | Verify that all books are displayed on the home page | All available books appear with image, title, author, and price | Displayed correctly | ✅ Pass | Screenshot_1 |
-| TC02 | Book Details | Verify that clicking “Buy Now” displays book details | Details of the selected book appear | Displayed correctly | ✅ Pass | Screenshot_2 |
-| TC03 | Cart | Verify that items can be added to the cart and subtotal updates correctly | Cart updates with new item and recalculates subtotal | Works as expected | ✅ Pass | Screenshot_3 |
-| TC04 | Cart | Verify that the “Remove” button deletes selected item | Item removed and subtotal updated | Item removed but subtotal delayed | ❌ Fail | Screenshot_3 |
-| TC05 | Checkout | Verify that all shipping fields accept valid input | User can enter all fields without error | Works correctly | ✅ Pass | Screenshot_4 |
-| TC06 | Checkout | Verify that empty required fields show validation errors | System should display “Field required” message | No error shown | ❌ Fail | Screenshot_4 |
-| TC07 | Payment | Verify that clicking “Next” moves to payment section | Payment page loads | Displayed correctly | ✅ Pass | Screenshot_5 |
+| Test Case ID | Description | Executed By | Date Executed | Result | Defect ID | Notes |
+|--------------|--------------|--------------|----------------|----------|------------|--------|
+| UI001 | Verify homepage layout loads correctly | DvChege | 07-Nov-2025 | Pass | - | Layout consistent with design |
+| UI002 | Verify book cards display image, title, author, price | DvChege | 07-Nov-2025 | Pass | - | All book cards rendered correctly |
+| UI003 | Ensure all book images render without broken links | Robel | 07-Nov-2025 | Fail | BUG-003 | Some images fail to load on Android |
+| UI004 | Verify search bar visibility and usability | Mike | 07-Nov-2025 | Fail | BUG-005 | Search bar not responsive on Enter |
+| UI005 | Check layout responsiveness on window resize | Josphat | 07-Nov-2025 | Pass | - | Works well on multiple resolutions |
+| UI006 | Verify footer and navigation bar visibility | Amos | 08-Nov-2025 | Pass | - | Navigation visible; links limited |
+| UI007 | Verify logo click redirects to home | Emmaculate | 08-Nov-2025 | Pass | - | Works as expected |
+| FN001 | Verify book catalog loads successfully | Robel | 08-Nov-2025 | Pass | - | Catalog loads with all listed books |
+| FN002 | Validate search returns exact match results | Mike | 08-Nov-2025 | Pass | - | Correct filtering on title match |
+| FN003 | Validate search returns partial match results | Mike | 08-Nov-2025 | Pass | - | Works for partial words |
+| FN004 | Ensure search is case-insensitive | Mike | 08-Nov-2025 | Pass | - | "Harry" = "harry" |
+| FN005 | Display “No books found” on invalid input | Josphat | 08-Nov-2025 | Pass | - | “No books found” message displays |
+| FN006 | Clearing search returns full book list | Amos | 08-Nov-2025 | Pass | - | Full list restored after clear |
+| FN007 | Verify Buy button action (expected no function) | DvChege | 08-Nov-2025 | Fail | BUG-001 | Buy button adds item silently |
+| TC001 | Validate checkout input form | Emmaculate | 09-Nov-2025 | Fail | BUG-002 | Invalid city accepted |
+| TC002 | Validate book details page navigation | Robel | 09-Nov-2025 | Fail | BUG-008 | Clicking book card does nothing |
+| TC003 | Test price filtering | Mike | 09-Nov-2025 | Fail | BUG-004 | Filter not working |
+| TC004 | Test currency selection | Josphat | 09-Nov-2025 | Fail | BUG-007 | Currency stuck on default |
+| TC005 | Validate coupon input | Amos | 09-Nov-2025 | Fail | BUG-009 | No coupon field displayed |
+| SE001 | SQL injection attempt on search field | DvChege | 10-Nov-2025 | Pass | - | System rejects malicious input |
+| SE002 | Invalid session cookie test | Mike | 10-Nov-2025 | Pass | - | App redirects to login |
+| SE003 | Test XSS in search input | Emmaculate | 10-Nov-2025 | Pass | - | Input sanitized properly |
+| PN001 | Page load time test (Chrome) | Robel | 10-Nov-2025 | Pass | - | Loads < 2.5s average |
+| PN002 | Image loading efficiency | Mike | 10-Nov-2025 | Fail | BUG-011 | Lazy-loading missing |
+| PN003 | Network error recovery | Amos | 10-Nov-2025 | Pass | - | Retried correctly |
+| PN004 | Responsiveness under slow 3G | Josphat | 10-Nov-2025 | Pass | - | Functional, minor delay |
 
 ---
 
-## 3. Execution Evidence
-**Evidence Screenshots:**  
-- Screenshot_1 → Book Listing Page  
-- Screenshot_2 → Book Details Page  
-- Screenshot_3 → Cart Page  
-- Screenshot_4 → Checkout Page  
-- Screenshot_5 → Payment Navigation  
+## 2. Execution Notes
 
-*(Screenshots correspond to the images uploaded during testing.)*
+- **Testing Method:** Manual testing on Chrome, Firefox, and Edge.  
+- **Defect Tracking:** Failing test cases linked to **Defect Log (`defect log.md`)**.  
+- **Evidence:** Screenshots and video demo saved under `/screenshots/` and `/videos/`.  
+- **Traceability:** Each test case linked to corresponding functional requirements.  
 
 ---
 
-## 4. Summary
-Out of 7 total test cases executed, **5 passed** and **2 failed**. Failed cases were logged for review in the defect log.  
-The system shows good functional stability with minor validation issues.
+**End of Test Execution Report**
