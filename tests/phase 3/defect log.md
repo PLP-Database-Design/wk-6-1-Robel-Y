@@ -11,9 +11,9 @@
 
 | Defect ID | Summary | Severity | Priority | Environment | Steps to Reproduce | Expected Result | Actual Result | Status | Notes |
 |------------|----------|-----------|-----------|--------------|--------------------|----------------|----------------|---------|--------|
-| BUG-001 | “Buy Now” adds to cart silently | Major | High | Firefox 128 | 1. Click “Buy Now” | User gets confirmation message | Book added silently | Open | Logged by DvChege |
+| BUG-001 | “Buy Now” adds to cart silently | Major | High | Firefox 128 | 1. Click “Buy Now” | User gets confirmation message | Book added silently | Closed |  When pressed item is added secretly |
 | BUG-002 | Invalid city input accepted in checkout | Major | High | Chrome 129 | 1. Enter random city → 2. Submit | Validation prevents submission | Form accepts invalid data | Open | Logged by Emmaculate |
-| BUG-003 | Some book/author images fail on Android | Major | Medium | Chrome 129, Android | 1. Load catalog | All images display | Some missing | Open | Linked to UI003 |
+| BUG-003 | Some book/author images fail on Android | Major | Medium | Chrome 129, Android | 1. Load catalog | All images display | Some missing | Closed | Linked to UI003 |
 | BUG-004 | Price filter not functioning | Major | High | Chrome 129, Windows 11 | 1. Search by price | Books filtered accordingly | No filter applied | Open | Linked to TC003 |
 | BUG-005 | Search bar not responsive on Enter | Major | Medium | Chrome 129, Windows 11 | 1. Type query → press Enter | Search executes | No response | Open | Linked to UI004 |
 | BUG-007 | Currency cannot be changed | Major | Medium | Chrome 129, Windows 11 | 1. Try changing currency | Currency updates | Stuck on default | Open | Linked to TC004 |
@@ -44,4 +44,5 @@
 ---
 
 **End of Defect Log**
+
 
