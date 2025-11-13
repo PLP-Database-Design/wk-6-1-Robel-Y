@@ -18,9 +18,9 @@ Testing covered major modules — Book Listing, Cart, Checkout, and Payment.
 | Metric | Description | Value |
 |---------|--------------|-------|
 | Total Test Cases Executed | All test cases from Phase 2 | 25 |
-| Test Cases Passed | Successfully executed | 22 |
-| Test Cases Failed | Identified with issues | 3 |
-| Total Defects Logged | From defect log | 3 |
+| Test Cases Passed | Successfully executed | 21 |
+| Test Cases Failed | Identified with issues | 4 |
+| Total Defects Logged | From defect log | 14 |
 | High Severity Defects | Critical to user experience | 1 |
 | Medium Severity Defects | Moderate impact | 1 |
 | Low Severity Defects | Minor issues | 1 |

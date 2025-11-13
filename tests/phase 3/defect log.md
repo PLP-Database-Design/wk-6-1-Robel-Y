@@ -25,10 +25,10 @@
 
 ## 2. Summary
 
-- **Total Defects:** 9  
+- **Total Defects:** 10 
 - **Major:** 6  
-- **Minor:** 3  
-- **Open Defects:** 9  
+- **Minor:** 4 
+- **Open Defects:** 10  
 - **Closed Defects:** 0  
 - **Fixed in Next Phase:** Scheduled for Patch 1.1  
 
