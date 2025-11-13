@@ -45,7 +45,7 @@ This report documents the execution results of all UI and Functional test cases 
 
 - **Testing Method:** Manual execution using Google Chrome browser on desktop and Android devices.  
 - **Defect Tracking:** All failing tests have been logged in the `defect-log.md` file with severity and priority levels.  
-- **Evidence:** Screenshots captured for both passing and failing tests stored in `/screenshots/Phase2/`.  
+- **Evidence:** Screenshots captured for both passing and failing tests stored in `/screenshots/Phase3/`.  
 - **Environment:** VS Code Live Server, Google Chrome v118, and local JSON data for book catalog.  
 - **Traceability:** Each test case corresponds to requirements defined in the Test Plan (Phase 1).  
 
