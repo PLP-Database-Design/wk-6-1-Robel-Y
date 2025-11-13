@@ -11,21 +11,21 @@
 
 | Test Case ID | Screen/Module | UI Element | Test Objective | Steps | Expected Result | Status |
 |--------------|---------------|------------|----------------|-------|----------------|--------|
-| UI-001 | Home Page | Book List Grid | Verify books are displayed in grid layout | 1. Open Home Page | Books appear in card layout with image + title + price |  Executed |
-| UI-002 | Home Page | Navbar | Check visibility, alignment, links, and hover effects | 1. Open Home Page 2. Inspect navbar items 3. Hover and click each | Navbar visible, items aligned, hover effect works, links navigate |  Executed |
-| UI-003 | Home Page | Search Bar | Verify visibility, placeholder, and input | 1. Open Home Page | Search bar visible, placeholder correct, allows typing |  Executed |
-| UI-004 | Home Page | Book Cards | Check card spacing, hover effects, clickable areas | 1. Observe cards 2. Hover on cards 3. Click card | Cards spaced evenly, hover highlights card, click navigates to details |  Executed |
-| UI-005 | Home Page | Category Filter | Verify visibility, clickable buttons | 1. Open Home Page | Filter buttons visible, clickable, filter books accordingly |  Executed |
-| UI-006 | Cart Icon | Badge Counter | Verify badge updates dynamically | 1. Add/remove items | Badge updates correctly |  Executed |
-| UI-007 | Buttons | Add to Cart | Verify visibility, hover, and active state | 1. Inspect button | Button visible, hover/active effect works, clickable |  Executed |
-| UI-008 | Checkout Page | Form Layout | Verify fields alignment and placeholder | 1. Open Checkout Page | Fields aligned, placeholder text correct |  Executed |
-| UI-009 | Footer | Links | Verify visibility and clickability | 1. Scroll to footer 2. Click links | Links visible and navigate correctly |  Executed |
-| UI-010 | Responsiveness | Home, Cart, Checkout | Verify layout adjusts to mobile/tablet | 1. Resize window/device | Layout adapts without overlap |  Executed |
-| UI-011 | Book Details | Details Page | Verify all elements | 1. Open book details | Title, author, price, description, Add to Cart visible |  Executed |
-| UI-012 | Tooltips | Buttons | Verify hover tooltips | 1. Hover over Add to Cart/Wishlist buttons | Tooltip displayed correctly |  Executed |
-| UI-013 | Error Messages | Forms | Verify inline validation | 1. Leave required field empty 2. Submit | Inline error message displayed |  Executed |
-| UI-014 | Images | Book Images | Verify image loads and fallback | 1. Open Home Page | Image visible or fallback if broken |  Executed |
-| UI-015 | Pagination/Scroll | Book List | Verify scroll or pagination works | 1. Scroll through book list | All books accessible, pagination correct |  Executed |
+| UI-001 | Home Page | Book List Grid | Verify books are displayed in grid layout | 1. Open Home Page | Books appear in card layout with image + title + price |  Pass |
+| UI-002 | Home Page | Navbar | Check visibility, alignment, links, and hover effects | 1. Open Home Page 2. Inspect navbar items 3. Hover and click each | Navbar visible, items aligned, hover effect works, links navigate |  Pass |
+| UI-003 | Home Page | Search Bar | Verify visibility, placeholder, and input | 1. Open Home Page | Search bar visible, placeholder correct, allows typing |  Pass |
+| UI-004 | Home Page | Book Cards | Check card spacing, hover effects, clickable areas | 1. Observe cards 2. Hover on cards 3. Click card | Cards spaced evenly, hover highlights card, click navigates to details |  Fail |
+| UI-005 | Home Page | Category Filter | Verify visibility, clickable buttons | 1. Open Home Page | Filter buttons visible, clickable, filter books accordingly |  Pass |
+| UI-006 | Cart Icon | Badge Counter | Verify badge updates dynamically | 1. Add/remove items | Badge updates correctly |  Pass |
+| UI-007 | Buttons | Add to Cart | Verify visibility, hover, and active state | 1. Inspect button | Button visible, hover/active effect works, clickable |  Pass |
+| UI-008 | Checkout Page | Form Layout | Verify fields alignment and placeholder | 1. Open Checkout Page | Fields aligned, placeholder text correct |  Pass |
+| UI-009 | Footer | Links | Verify visibility and clickability | 1. Scroll to footer 2. Click links | Links visible and navigate correctly |  Not Executed |
+| UI-010 | Responsiveness | Home, Cart, Checkout | Verify layout adjusts to mobile/tablet | 1. Resize window/device | Layout adapts without overlap |  Pass |
+| UI-011 | Book Details | Details Page | Verify all elements | 1. Open book details | Title, author, price, description, Add to Cart visible |  Fail |
+| UI-012 | Tooltips | Buttons | Verify hover tooltips | 1. Hover over Add to Cart | Tooltip displayed correctly | Not Executed |
+| UI-013 | Error Messages | Forms | Verify inline validation | 1. Leave required field empty 2. Submit | Inline error message displayed | Pass |
+| UI-014 | Images | Book Images | Verify image loads and fallback | 1. Open Home Page | Image visible or fallback if broken |  Pass |
+| UI-015 | Pagination/Scroll | Book List | Verify scroll or pagination works | 1. Scroll through book list | All books accessible, pagination correct |  Pass |
 
 </details>
 
@@ -61,8 +61,8 @@
 | Test Case ID | Module | Test Objective | Pre-Condition | Test Steps | Expected Result | Status |
 |--------------|--------|----------------|---------------|------------|----------------|--------|
 | SE-002 | Input Validation | Prevent XSS in search/forms | Any input | 1. Enter script tag in input | Input sanitized, no code execution |  Executed |
-| SE-003 | Payment | Handle interrupted payment | Checkout reached | 1. Simulate payment disconnect | Show error, allow retry |  Executed |
-| SE-004 | Cart Limits | Max quantity enforcement | Book available | 1. Add more than allowed quantity | Display limit message |  Executed |
+| SE-003 | Payment | Handle interrupted payment | Checkout reached | 1. Simulate payment disconnect | Show error, allow retry |  Pass |
+| SE-004 | Cart Limits | Max quantity enforcement | Book available | 1. Add more than allowed quantity | Display limit message |  Fail |
 
 
 </details>
@@ -72,10 +72,10 @@
 
 | Test Case ID | Module | Test Objective | Pre-Condition | Test Steps | Expected Result | Status |
 |--------------|--------|----------------|---------------|------------|----------------|--------|
-| PN-001 | Performance | Page load time | App running | 1. Open Home, Cart, Checkout | Pages load within acceptable time (<3s) |  Executed |
-| PN-002 | Notifications | Toast messages for actions | Any action | 1. Add/remove item 2. Wishlist action | Toast appears with correct message |  Executed |
-| PN-003 | Stress | Multiple cart additions | User logged in | 1. Rapidly add multiple books | Cart updates correctly without crash |  Executed |
-| PN-004 | Responsive | Mobile/tablet view | Resize window/device | 1. Check all pages | Layout adapts, no broken elements |  Executed |
+| PN-001 | Performance | Page load time | App running | 1. Open Home, Cart, Checkout | Pages load within acceptable time (<3s) |  Pass |
+| PN-002 | Notifications | Toast messages for actions | Any action | 1. Add/remove item 2. Wishlist action | Toast appears with correct message | Not Executed |
+| PN-003 | Stress | Multiple cart additions | User logged in | 1. Rapidly add multiple books | Cart updates correctly without crash |  Pass |
+| PN-004 | Responsive | Mobile/tablet view | Resize window/device | 1. Check all pages | Layout adapts, no broken elements |  Pass |
 
 </details>
 
