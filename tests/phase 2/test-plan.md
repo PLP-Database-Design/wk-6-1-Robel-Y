@@ -62,7 +62,6 @@ The following features are *not* currently implemented and therefore will not be
 | `test-cases.md` | UI and Functional test cases |
 | `test-execution.md` | Execution results (Pass / Fail) |
 | `defect-log.md` | List of defects found during testing |
-| `screenshots/` | Evidence of executed test results |
 
 ---
 
@@ -71,7 +70,6 @@ The following features are *not* currently implemented and therefore will not be
 |------|-------------|
 | **Manual UI Testing** | Observe visual layout, spacing, and responsiveness |
 | **Functional Testing** | Input search queries and verify outcome |
-| **Regression Testing** | Re-run tests after any UI fixes |
 
 No automation testing is included in this phase.
 
