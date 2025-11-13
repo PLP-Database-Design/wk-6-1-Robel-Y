@@ -25,7 +25,7 @@ This report documents the execution results of all UI and Functional test cases 
 | FN004 | Ensure search is case-insensitive | Emmaculate | 08-Nov-2025 | Pass | - | "Harry" = "harry" |
 | FN005 | Display “No books found” on invalid input | Emmaculate| 08-Nov-2025 | Pass | - | “No books found” message displays |
 | FN006 | Clearing search returns full book list | DvChege | 08-Nov-2025 | Pass | - | Full list restored after clear |
-| FN007 | Verify Buy button action (expected no function) | DvChege | 08-Nov-2025 | Fail | BUG-001 | Buy button adds item silently |
+| FN007 | Verify Buy button action (expected no function) | DvChege | 08-Nov-2025 | Fail | [BUG-001] | Buy button adds item silently |
 | TC001 | Validate checkout input form | Emmaculate | 09-Nov-2025 | Fail | BUG-002 | Invalid city accepted |
 | TC002 | Validate book details page navigation | Robel | 09-Nov-2025 | Fail | BUG-008 | Clicking book card does nothing |
 | TC003 | Test price filtering | DvChege | 09-Nov-2025 | Fail | BUG-004 | Filter not working |
