@@ -1,30 +1,46 @@
-# Phase 3 – Defect Log  
+# Defect Log – Bookstore Application (Phase 3)
+
 **Team:** GTRs Testers  
-**Application:** Bookstore App  
-**Tester:** DvChege  
+**Prepared By:** Emmaculate Mumbua  
 **Date:** November 2025  
+**Environment:** Chrome 129 / Firefox 128 / Edge 128 / Windows 10–11 / macOS 14 / Android 12  
 
 ---
 
-## 1. Objective
-To record and track all identified defects from the test execution phase, along with their severity, priority, and resolution status.
+## 1. Defect Table
+
+| Defect ID | Summary | Severity | Priority | Environment | Steps to Reproduce | Expected Result | Actual Result | Status | Notes |
+|------------|----------|-----------|-----------|--------------|--------------------|----------------|----------------|---------|--------|
+| BUG-001 | “Buy Now” adds to cart silently | Major | High | Firefox 128, macOS 14 | 1. Click “Buy Now” | User gets confirmation message | Book added silently | Open | Logged by DvChege |
+| BUG-002 | Invalid city input accepted in checkout | Major | High | Chrome 129, Windows 10 | 1. Enter random city → 2. Submit | Validation prevents submission | Form accepts invalid data | Open | Logged by Emmaculate |
+| BUG-003 | Some book/author images fail on Android | Major | Medium | Chrome 129, Android 12 | 1. Load catalog | All images display | Some missing | Open | Linked to UI003 |
+| BUG-004 | Price filter not functioning | Major | High | Chrome 129, Windows 10 | 1. Search by price | Books filtered accordingly | No filter applied | Open | Linked to TC003 |
+| BUG-005 | Search bar not responsive on Enter | Major | Medium | Chrome 129, Windows 10 | 1. Type query → press Enter | Search executes | No response | Open | Linked to UI004 |
+| BUG-007 | Currency cannot be changed | Major | Medium | Chrome 129, Windows 10 | 1. Try changing currency | Currency updates | Stuck on default | Open | Linked to TC004 |
+| BUG-008 | Book details not viewable | Major | High | Chrome 129, Windows 10 | 1. Click book card | Details page opens | No response | Open | Linked to TC002 |
+| BUG-009 | Coupon field missing on checkout | Medium | Medium | Firefox 128, Windows 11 | 1. Go to checkout | Coupon field visible | Not present | Open | Linked to TC005 |
+| BUG-011 | Lazy-loading not implemented | Minor | Low | Chrome 129, Android 12 | 1. Scroll book catalog | Lazy-load images | All load immediately | Open | Linked to PN002 |
 
 ---
 
-## 2. Defect Table
+## 2. Summary
 
-| Defect ID | Module | Description | Steps to Reproduce | Expected Result | Actual Result | Severity | Priority | Status | Assigned To |
-|------------|---------|-------------|--------------------|-----------------|----------------|-----------|-----------|----------|--------------|
-| DEF-01 | Cart | Subtotal not updating immediately after removing an item | 1. Add multiple books to cart<br>2. Remove one<br>3. Check subtotal | Subtotal should update instantly | Subtotal updates only after refresh | Medium | P2 | Open | Developer 1 |
-| DEF-02 | Checkout | Required field validation missing | 1. Leave fields empty<br>2. Click “Next” | Error message “Field required” should appear | No validation message shown | High | P1 | Open | Developer 2 |
-| DEF-03 | Cart | Quantity accepts non-numeric input | 1. Add book<br>2. Enter letters in quantity field | Only numbers should be accepted | Accepts letters | Low | P3 | Resolved | Developer 3 |
+- **Total Defects:** 9  
+- **Major:** 6  
+- **Minor:** 3  
+- **Open Defects:** 9  
+- **Closed Defects:** 0  
+- **Fixed in Next Phase:** Scheduled for Patch 1.1  
 
 ---
 
-## 3. Defect Summary
-- **Total Defects Logged:** 3  
-- **Resolved Defects:** 1  
-- **Pending Defects:** 2  
-- **Critical (High Severity):** 1  
+## 3. Recommendations
 
-Follow-up retesting is recommended once open defects are fixed.
+- Add proper UI feedback after “Buy Now” action.  
+- Implement validation for checkout city input.  
+- Enable lazy-loading and improve image optimization.  
+- Expand search function to include all metadata (title, price, author).  
+
+---
+
+**End of Defect Log**
