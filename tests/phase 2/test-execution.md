@@ -17,7 +17,7 @@ This report documents the execution results of all UI and Functional test cases 
 | UI003 | Ensure all book images render without broken links | DvChege | 10/11/2025 | Pass | - | No broken or missing images found |
 | UI004 | Verify search bar visibility and usability | DvChege | 10/11/2025 | Pass | - | Search bar visible and responsive |
 | UI005 | Check layout responsiveness on window resize | DvChege | 11/11/2025 | Pass | - | Layout adjusts seamlessly on mobile and desktop views |
-| UI006 | Verify footer links are working correctly | DvChege | 11/11/2025 | Pass | - | Footer links redirect to expected pages |
+| UI006 | Verify footer links are working correctly | DvChege | 11/11/2025 | Fail | - | Footer links not implemented|
 | UI007 | Validate color contrast and font visibility | DvChege | 11/11/2025 | Pass | - | Colors meet accessibility standards |
 | FN001 | Verify book catalog loads successfully | DvChege | 11/11/2025 | Pass | - | All books displayed within 2 seconds |
 | FN002 | Validate search returns exact match results | DvChege | 11/11/2025 | Pass | - | Accurate results displayed for exact keyword |
