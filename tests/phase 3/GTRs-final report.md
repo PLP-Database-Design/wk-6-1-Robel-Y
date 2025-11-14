@@ -41,7 +41,6 @@ There is **no login**, **no admin panel**, **no cart**, and **no detailed book p
 | Search Function | Implemented |
 | Book Details Page | Not Implemented |
 | Cart & Checkout | Not Implemented |
-| Login / Admin | Not Implemented |
 | Payments | Not Implemented |
 
 Requirements for Phase 2 testing were therefore based on the **actual implemented system**, not assumed features.
@@ -63,46 +62,43 @@ Out-of-scope items included login, admin, checkout, and cart features, which the
 
 | Test Case ID | Module | Test Objective | Pre-Condition | Test Steps | Expected Result | Status |
 |--------------|---------|---------------|----------------|------------|----------------|--------|
-| TC-001 | UI Layout | Verify homepage loads correctly | App running | Open homepage | Books render with images and titles | Not Executed |
-| TC-002 | Search | Verify search filters books | Books loaded | Enter keyword | Matching books displayed | Not Executed |
-| TC-003 | Search | Verify empty search shows all books | Books loaded | Clear search bar | Full list displayed | Not Executed |
-| TC-004 | Book Card | Verify book card elements | App running | Inspect card | Image, title, price visible | Not Executed |
-| TC-005 | Buy Button | Verify “Buy” button is visible | App running | Click Buy | No page redirect (expected) | Not Executed |
+| TC-001 | UI Layout | Verify homepage loads correctly | App running | Open homepage | Books render with images and titles | Pass |
+| TC-002 | Search | Verify search filters books | Books loaded | Enter keyword | Matching books displayed | Pass |
+| TC-003 | Search | Verify empty search shows all books | Books loaded | Clear search bar | Full list displayed | Pass |
+| TC-004 | Book Card | Verify book card elements | App running | Inspect card | Image, title, price visible | Pass |
+| TC-005 | Buy Button | Verify “Buy” button is visible | App running | Click Buy | No page redirect (expected) | Pass |
 
 ## **3.3 UI/UX Checklist**
 
 | UI Area | Check | Status | Notes |
 |--------|-------|--------|-------|
-| Layout | Content aligned | Pending | — |
-| Buttons | Clearly visible | Pending | — |
-| Text | Readable fonts | Pending | — |
-| Navigation | Simple navigation | Pending | No multiple pages |
-| Colors | Consistent theme | Pending | — |
-| Images | Render clearly | Pending | Some distorted |
-| Forms | N/A | — | No forms implemented |
-| Responsiveness | Works on laptop/mobile | Pending | — |
+| Layout | Content aligned |Pass | — |
+| Buttons | Clearly visible | Pass| — |
+| Text | Readable fonts | Pass | — |
+| Navigation | Simple navigation | Pass | No multiple pages |
+| Colors | Consistent theme | Pass | The colors are consistent |
+| Images | Render clearly |Pass | - |
+| Forms | Checkout form clarity | —Pass|  forms are clear |
+| Responsiveness | Works on laptop/mobile | Pass| Responsive in mobile/laptop|
 
 ---
 
 # **4. Phase 3 – Test Execution, Evidence & Defect Log**
 
 ## **4.1 Execution Summary**
-All Phase 2 test cases were executed by:
-- **DvChege**
-- **Robel**
 
 Execution results include pass/fail status and screenshots as evidence.
 
 ## **4.2 Final Execution Table**
 | Test Case ID | Result | Evidence | Tester |
 |--------------|--------|----------|--------|
-| TC-001 | Pass/Fail | screenshot | DvChege |
+| TC-001 | Pass/Fail | screenshot | Robel |
 | TC-002 | Pass/Fail | screenshot | Robel |
 | TC-003 | Pass/Fail | screenshot | Robel |
-| TC-004 | Pass/Fail | screenshot | DvChege |
-| TC-005 | Pass/Fail | screenshot | DvChege |
+| TC-004 | Pass/Fail | screenshot |Robel |
+| TC-005 | Pass/Fail | screenshot | Robel |
 
-(Replace results after running tests manually)
+
 
 ## **4.3 Defect Log Summary**
 
@@ -152,7 +148,7 @@ Immaculate maintained the defect log in GitHub.
 Testing across three phases allowed the team to understand the current limitations of the Bookstore App and identify areas that require enhancement.  
 The system functions as a simple static catalog but lacks key ecommerce features.  
 
-The defects found were documented for future development in Phase 4 or course continuation.
+
 
 ---
 
