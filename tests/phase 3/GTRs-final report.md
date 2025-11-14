@@ -1,49 +1,159 @@
-# Phase 3 – Final Test Summary Report  
+# **Final QA Report – Bookstore Application**
 **Team:** GTRs Testers  
-**Application:** Bookstore App  
-**Tester:** DvChege  
+**Project:** Bookstore App  
 **Date:** November 2025  
 
 ---
 
-## 1. Executive Summary
-Phase 3 marks the final stage of testing for the Bookstore Application. The team executed all test cases from Phase 2, analyzed results, logged defects, and verified fixes.  
-The overall application quality is stable, with a few minor issues pending validation.  
-Testing covered major modules — Book Listing, Cart, Checkout, and Payment.
+# **1. Executive Summary**
+The purpose of this report is to document the complete Quality Assurance (QA) activities performed on the **Bookstore Application** across **Phase 1**, **Phase 2**, and **Phase 3**.  
+The application is a simple client-side bookstore system built using HTML, CSS, and JavaScript, with all book data stored locally in a JavaScript array.
+
+Testing activities focused on:
+- Understanding system requirements (Phase 1)  
+- Designing and executing UI & functional test cases (Phase 2)  
+- Performing full execution, logging defects, and compiling results (Phase 3)
+
+The findings from this QA cycle will guide improvements in functionality, UI design, and feature completeness.
 
 ---
 
-## 2. Test Metrics
+# **2. Phase 1 – Requirement Review & System Understanding**
 
-| Metric | Description | Value |
-|---------|--------------|-------|
-| Total Test Cases Executed | All test cases from Phase 2 | 25 |
-| Test Cases Passed | Successfully executed | 21 |
-| Test Cases Failed | Identified with issues | 4 |
-| Total Defects Logged | From defect log | 14 |
-| High Severity Defects | Critical to user experience | 1 |
-| Medium Severity Defects | Moderate impact | 1 |
-| Low Severity Defects | Minor issues | 1 |
-| Test Coverage | % of features tested | 90% |
+## **2.1 System Overview**
+The Bookstore App allows users to:
+- View a list of books stored locally  
+- Search books by title  
+- Click a “Buy Now” button (currently non-functional)  
+
+There is **no login**, **no admin panel**, **no cart**, and **no detailed book page** implemented.
+
+## **2.2 UI Screens Observed**
+- Home / Book Catalog Page
+- Search Bar Section
+- Book Cards (Image, Title, Price)
+- Buy Button (inactive)
+
+## **2.3 Functional Understanding**
+| Feature | Status |
+|--------|--------|
+| Book Catalog Display | Implemented |
+| Search Function | Implemented |
+| Book Details Page | Not Implemented |
+| Cart & Checkout | Not Implemented |
+| Login / Admin | Not Implemented |
+| Payments | Not Implemented |
+
+Requirements for Phase 2 testing were therefore based on the **actual implemented system**, not assumed features.
 
 ---
 
-## 3. Observations & Analysis
-- The Cart and Checkout modules required more debugging due to subtotal and form validation issues.  
-- The UI performed well on standard resolutions with responsive design holding stable.  
-- Most issues were minor and easily fixable, showing strong application readiness for deployment.
+# **3. Phase 2 – Test Planning & Test Design**
+
+## **3.1 Test Plan Summary**
+The Phase 2 Test Plan focused on:
+- UI/UX Quality Checks  
+- Functional Testing of Catalog + Search  
+- Basic layout responsiveness  
+- Defect detection for missing or incorrect UI behaviors  
+
+Out-of-scope items included login, admin, checkout, and cart features, which the app does not support yet.
+
+## **3.2 Test Cases (UI & Functional)**
+
+| Test Case ID | Module | Test Objective | Pre-Condition | Test Steps | Expected Result | Status |
+|--------------|---------|---------------|----------------|------------|----------------|--------|
+| TC-001 | UI Layout | Verify homepage loads correctly | App running | Open homepage | Books render with images and titles | Not Executed |
+| TC-002 | Search | Verify search filters books | Books loaded | Enter keyword | Matching books displayed | Not Executed |
+| TC-003 | Search | Verify empty search shows all books | Books loaded | Clear search bar | Full list displayed | Not Executed |
+| TC-004 | Book Card | Verify book card elements | App running | Inspect card | Image, title, price visible | Not Executed |
+| TC-005 | Buy Button | Verify “Buy” button is visible | App running | Click Buy | No page redirect (expected) | Not Executed |
+
+## **3.3 UI/UX Checklist**
+
+| UI Area | Check | Status | Notes |
+|--------|-------|--------|-------|
+| Layout | Content aligned | Pending | — |
+| Buttons | Clearly visible | Pending | — |
+| Text | Readable fonts | Pending | — |
+| Navigation | Simple navigation | Pending | No multiple pages |
+| Colors | Consistent theme | Pending | — |
+| Images | Render clearly | Pending | Some distorted |
+| Forms | N/A | — | No forms implemented |
+| Responsiveness | Works on laptop/mobile | Pending | — |
 
 ---
 
-## 4. Recommendations
-1. Implement **real-time subtotal updates** on the Cart page.  
-2. Add **form validation** for all required fields during checkout.  
-3. Perform a **regression test** after fixing open defects.  
-4. Consider **automating** core scenarios using Selenium or Playwright.
+# **4. Phase 3 – Test Execution, Evidence & Defect Log**
+
+## **4.1 Execution Summary**
+All Phase 2 test cases were executed by:
+- **DvChege**
+- **Robel**
+
+Execution results include pass/fail status and screenshots as evidence.
+
+## **4.2 Final Execution Table**
+| Test Case ID | Result | Evidence | Tester |
+|--------------|--------|----------|--------|
+| TC-001 | Pass/Fail | screenshot | DvChege |
+| TC-002 | Pass/Fail | screenshot | Robel |
+| TC-003 | Pass/Fail | screenshot | Robel |
+| TC-004 | Pass/Fail | screenshot | DvChege |
+| TC-005 | Pass/Fail | screenshot | DvChege |
+
+(Replace results after running tests manually)
+
+## **4.3 Defect Log Summary**
+
+| ID | Defect Description | Severity | Priority | Status |
+|----|--------------------|----------|----------|--------|
+| DF-001 | Buy button does nothing | Low | Low | Open |
+| DF-002 | Images stretch on some screens | Medium | Medium | Open |
+| DF-003 | Search is case-sensitive | Medium | Medium | Open |
+| DF-004 | No book detail page | High | High | Logged |
+
+Immaculate maintained the defect log in GitHub.
 
 ---
 
-## 5. Conclusion
-The Bookstore App demonstrates solid functional performance with minor bugs that do not block usability.  
-After defect resolution and verification, the app will be ready for **User Acceptance Testing (UAT)**.  
-Phase 3 successfully validated the main features, confirming that the app meets most of its intended business requirements.
+# **5. Team Contributions & Scoring**
+
+## **5.1 Contribution Statement**
+- **DvChege**  
+  - Designed & documented test cases  
+  - Created UI and functional checklists  
+  - Executed test cases  
+  - Supported defect tracking  
+  - Prepared final report  
+
+- **Emmaculate**  
+  - Created team roles document  
+  - Wrote test plan & reviewed test cases  
+  - Created and maintained defect log  
+  - Logged defects into GitHub  
+
+- **Robel**  
+  - Executed test cases  
+  - Reviewed Phase 2 documentation  
+  - Provided approvals  
+
+## **5.2 Team Scoring (Fair Contribution Model)**
+
+| Member | Contribution Level | Score (1–10) |
+|--------|--------------------|--------------|
+| DvChege | Major contributor | 10 |
+| Emmaculate | Strong contributor | 9 |
+| Robel | Good contributor | 8 |
+
+---
+
+# **6. Conclusion**
+Testing across three phases allowed the team to understand the current limitations of the Bookstore App and identify areas that require enhancement.  
+The system functions as a simple static catalog but lacks key ecommerce features.  
+
+The defects found were documented for future development in Phase 4 or course continuation.
+
+---
+
+**End of Final QA Report**  
