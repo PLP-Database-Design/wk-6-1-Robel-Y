@@ -127,7 +127,7 @@ During Phase 2, the team collaborated on test planning, UI evaluation, test docu
 ## 11. Approval
 | Name | Role | Signature | Date |
 |------|------|-----------|------|
-| DvChege | Tester | J.C | — |
+| DvChege | Tester | J.C | 16 Nov 2025 |
 | Robel | QA Lead | — | — |
 | Immaculate | Documentation Lead | — | — |
 
