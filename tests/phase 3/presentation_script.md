@@ -2,7 +2,9 @@
 
 **Team:** GTRs Testers  
 **Presenter:** Emmaculate & Josphat
+
 **Date:** November 2025 
+
 **Duration:** 5 Minutes  
 
 ---
@@ -11,6 +13,7 @@
 
 Hello, my name is Emmaculate from the GTRs Testing Team.  
 My team Members include; Robel Yihelu(team lead), Josphat Chege(QA Analyst 7 planner) and Emmaculate Mumbua(test executor & documentation lead)
+
 This presentation summarizes our QA testing for the Bookstore Application, covering UI, Functional, Performance, and Security testing.
 
 **Scope included:**
@@ -126,4 +129,5 @@ This testing cycle enhanced the app's overall quality and aligned results with f
 
 Thank you for reviewing this presentation.
 **GTRs Testers**
+
 
