@@ -35,7 +35,7 @@
 | Test Case ID | Module | Test Objective | Pre-Condition | Test Steps | Expected Result | Status |
 |--------------|--------|----------------|---------------|------------|----------------|--------|
 | TC-001 | Book Catalog | Display books correctly | App running | 1. Open Home Page 2. Scroll | Books appear with correct details |  Executed |
-| TC-002 | Book Catalog | Sorting by price/title | Books available | 1. Click sort dropdown | Books sorted correctly |  Executed |
+| TC-002 | Book Catalog | Sorting by price/title | Books available | 1. Click sort dropdown | Books sorted correctly | Not Executed |
 | TC-003 | Book Catalog | Filtering by category | Books available | 1. Select category filter | Only category books shown |  Executed |
 | TC-004 | Search | Search filters correctly | Books available | 1. Enter keyword 2. Click Search | Matching books displayed |  Executed |
 | TC-005 | Search | No results message | Books available | 1. Enter invalid keyword | “No results found” displayed |  Executed |
