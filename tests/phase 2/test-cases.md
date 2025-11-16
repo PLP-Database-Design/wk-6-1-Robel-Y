@@ -40,12 +40,12 @@
 | TC-004 | Search | Search filters correctly | Books available | 1. Enter keyword 2. Click Search | Matching books displayed |  Executed |
 | TC-005 | Search | No results message | Books available | 1. Enter invalid keyword | “No results found” displayed |  Executed |
 | TC-006 | Search | Case-insensitive search | Books available | 1. Enter uppercase/lowercase keyword | Correct books displayed |  Executed |
-| TC-007 | Cart | Add book to cart | User logged in | 1. Select book 2. Click Add to Cart | Book appears in cart | Executed |
+| TC-007 | Cart | Add book to cart | User logged in | 1. Select book 2. Click Add to Cart | Book appears in cart | Not Executed |
 | TC-008 | Cart | Update quantity | Item in cart | 1. Increase/decrease quantity | Total updates correctly |  Executed |
 | TC-009 | Cart | Remove item | Item in cart | 1. Click Remove | Item removed, total updates |  Executed |
 | TC-010 | Cart | Empty cart checkout | Cart empty | 1. Click Checkout | Warning/error displayed, prevent checkout |  Executed |
 | TC-011 | Checkout | Load checkout page | Items in cart | 1. Click Checkout | Checkout summary visible |  Executed |
-| TC-012 | Payments | Successful payment | Checkout reached | 1. Pay via test card | Success screen with Order ID | Executed |
+| TC-012 | Payments | Successful payment | Checkout reached | 1. Pay via test card | Success screen with Order ID |Not Executed |
 | TC-013 | Payments | Failed payment | Checkout reached | 1. Enter invalid card 2. Click Pay | Error message displayed |  Executed |
 | TC-014 | Order | Order receipt displayed | Payment completed | 1. Wait for redirect | Receipt with order details displayed |Not Executed |
 | TC-015 | Wishlist | Add to wishlist | User logged in | 1. Click Add to Wishlist | Book added to wishlist | Not Executed |
