@@ -25,11 +25,12 @@ Findings from this QA cycle will guide improvements in functionality, UI design,
 The Bookstore App allows users to:
 - View a list of books stored locally  
 - Search books by title  
-- Click a “Buy Now” button (currently non-functional)  
+- Click a “Buy Now” button (currently non-functional)
+- Cart  
+    
 
 **Not Implemented in Phase 1:**
 - Login / Admin panel  
-- Cart  
 - Book details page  
 
 ## **2.2 UI Screens Observed**
