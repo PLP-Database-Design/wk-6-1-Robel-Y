@@ -92,11 +92,11 @@ Execution results include pass/fail status and screenshots as evidence.
 ## **4.2 Final Execution Table**
 | Test Case ID | Result | Evidence | Tester |
 |--------------|--------|----------|--------|
-| TC-001 | Pass/Fail | screenshot | Emma  |
-| TC-002 | Pass/Fail | screenshot | Emma  |
-| TC-003 | Pass/Fail | screenshot | Emma |
-| TC-004 | Pass/Fail | screenshot |Emma  |
-| TC-005 | Pass/Fail | screenshot | Emma |
+| TC-001 | Pass | screenshot | Emma  |
+| TC-002 | Pass | screenshot | Emma  |
+| TC-003 | Pass | screenshot | Emma |
+| TC-004 | Pass | screenshot |Emma  |
+| TC-005 | Pass | screenshot | Emma |
 
 
 
