@@ -173,7 +173,7 @@ All issues tracked in GitHub (BUG-001 to BUG-011).
 # **7. Environment Details**
 
 ## **7.1 Platforms**
-- Windows 1 11  
+- Windows  11  
 - Android 12  
 - Browsers: Chrome, Firefox, Edge  
 
