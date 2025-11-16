@@ -78,7 +78,7 @@ Out-of-scope items included login, admin, checkout, and cart features, which the
 | Navigation | Simple navigation | Pass | No multiple pages |
 | Colors | Consistent theme | Pass | The colors are consistent |
 | Images | Render clearly |Pass | - |
-| Forms | Checkout form clarity | —Pass|  forms are clear |
+| Forms | Checkout form clarity | Pass|  forms are clear |
 | Responsiveness | Works on laptop/mobile | Pass| Responsive in mobile/laptop|
 
 ---
@@ -92,11 +92,11 @@ Execution results include pass/fail status and screenshots as evidence.
 ## **4.2 Final Execution Table**
 | Test Case ID | Result | Evidence | Tester |
 |--------------|--------|----------|--------|
-| TC-001 | Pass/Fail | screenshot | Robel |
-| TC-002 | Pass/Fail | screenshot | Robel |
-| TC-003 | Pass/Fail | screenshot | Robel |
-| TC-004 | Pass/Fail | screenshot |Robel |
-| TC-005 | Pass/Fail | screenshot | Robel |
+| TC-001 | Pass/Fail | screenshot | Emma  |
+| TC-002 | Pass/Fail | screenshot | Emma  |
+| TC-003 | Pass/Fail | screenshot | Emma |
+| TC-004 | Pass/Fail | screenshot |Emma  |
+| TC-005 | Pass/Fail | screenshot | Emma |
 
 
 
