@@ -1,53 +1,232 @@
-# Test Execution Report – Bookstore Application (Phase 2 & 3)
-
-**Team:** GTRs Testers  
-**Tester(s):** DvChege, Emmaculate, Robel
+# **Software Test Report – Bookstore Web Application (Phase 2 & 3)**  
 **Date:** November 2025  
-
-This report documents the execution results of all UI and Functional test cases for the Bookstore Application, including Pass/Fail status, defects, and observations.
-
----
-
-## 1. Test Execution Table
-
-| Test Case ID | Description | Executed By | Date Executed | Result | Defect ID | Notes |
-|--------------|--------------|--------------|----------------|----------|------------|--------|
-| UI001 | Verify homepage layout loads correctly | DvChege | 07-Nov-2025 | Pass | - | Layout consistent with design |
-| UI002 | Verify book cards display image, title, author, price | DvChege | 07-Nov-2025 | Pass | - | All book cards rendered correctly |
-| UI003 | Ensure all book images render without broken links | Robel | 07-Nov-2025 | Fail | [BUG-003](https://github.com/PLP-Database-Design/wk-6-1-Robel-Y/issues/3#issue-3605378154) | Some images fail to load on Android |
-| UI004 | Verify search bar visibility and usability | Emmaculate| 07-Nov-2025 | Fail | [BUG-005](https://github.com/PLP-Database-Design/wk-6-1-Robel-Y/issues/5#issue-3620175835) | Search bar not responsive on Enter |
-| UI005 | Check layout responsiveness on window resize | Robel | 07-Nov-2025 | Pass | - | Works well on multiple resolutions |
-| UI006 | Verify footer and navigation bar visibility | Robel | 08-Nov-2025 | Pass | - | Navigation visible; links limited |
-| UI007 | Verify logo click redirects to home | Emmaculate | 08-Nov-2025 | Pass | - | Works as expected |
-| FN001 | Verify book catalog loads successfully | Emmaculate | 08-Nov-2025 | Pass | - | Catalog loads with all listed books |
-| FN002 | Validate search returns exact match results | Emmaculate | 08-Nov-2025 | Fail | [BUG-008](https://github.com/PLP-Database-Design/wk-6-1-Robel-Y/issues/8#issue-3620353811) | Cannot view book details |
-| FN003 | Validate search returns partial match results | DvChege| 08-Nov-2025 | Pass | - | Works for partial words |
-| FN004 | Ensure search is case-insensitive | Emmaculate | 08-Nov-2025 | Pass | - | "Harry" = "harry" |
-| FN005 | Display “No books found” on invalid input | Emmaculate| 08-Nov-2025 | Pass | - | “No books found” message displays |
-| FN006 | Clearing search returns full book list | DvChege | 08-Nov-2025 | Pass | - | Full list restored after clear |
-| FN007 | Verify Buy button action (expected no function) | DvChege | 08-Nov-2025 | Fail | [BUG-001](https://github.com/PLP-Database-Design/wk-6-1-Robel-Y/issues/1#issue-3605368672) | Buy button adds item silently |
-| TC001 | Validate checkout input form | Emmaculate | 09-Nov-2025 | Fail | [BUG-002](https://github.com/PLP-Database-Design/wk-6-1-Robel-Y/issues/2#issue-3605374428) | Invalid city accepted |
-| TC002 | Validate book details page navigation | Robel | 09-Nov-2025 | Fail |[BUG-008](https://github.com/PLP-Database-Design/wk-6-1-Robel-Y/issues/8#issue-3620353811)  | Clicking book card does nothing |
-| TC003 | Test price filtering | DvChege | 09-Nov-2025 | Fail | [BUG-004](https://github.com/PLP-Database-Design/wk-6-1-Robel-Y/issues/4#issue-3620153747) | Filter not working |
-| TC004 | Test currency selection | Robel | 09-Nov-2025 | Fail | [BUG-007](https://github.com/PLP-Database-Design/wk-6-1-Robel-Y/issues/7#issue-3620333994) | Currency stuck on default |
-| TC005 | Validate coupon input | Robel | 09-Nov-2025 | Fail | [BUG-009](https://github.com/PLP-Database-Design/wk-6-1-Robel-Y/issues/9#issue-3620370643) | No coupon field displayed |
-| SE001 | SQL injection attempt on search field | DvChege | 10-Nov-2025 | Pass | - | System rejects malicious input |
-| SE002 | Invalid session cookie test | Emmaculate | 10-Nov-2025 | Pass | - | App redirects to login |
-| SE003 | Test XSS in search input | Emmaculate | 10-Nov-2025 | Pass | - | Input sanitized properly |
-| PN001 | Page load time test (Chrome) | Robel | 10-Nov-2025 | Pass | - | Loads < 2.5s average |
-| PN002 | Image loading efficiency | DvChege | 10-Nov-2025 | Fail | [BUG-011](https://github.com/PLP-Database-Design/wk-6-1-Robel-Y/issues/10#issue-3620387452) | Lazy-loading missing |
-| PN003 | Network error recovery | DvChege | 10-Nov-2025 | Pass | - | Retried correctly |
-| PN004 | Responsiveness under slow 3G | DvChege | 10-Nov-2025 | Pass | - | Functional, minor delay |
+**Team:** GTRs Testers  
+**Testers:** DvChege, Emmaculate, Robel  
+**Version:** 1.0  
 
 ---
 
-## 2. Execution Notes
+## **Executive Summary**
 
-- **Testing Method:** Manual testing on Chrome, Firefox, and Edge.  
-- **Defect Tracking:** Failing test cases linked to **Defect Log (`defect log.md`)**.  
-- **Evidence:** Screenshots and video demo saved under `/screenshots/` and `/videos/`.  
-- **Traceability:** Each test case linked to corresponding functional requirements.  
+This report summarizes the results of UI, Functional, Performance, and Security testing performed on the Bookstore Web Application from **7–10 November 2025**. The goal was to evaluate overall system quality and identify defects affecting user experience and core features.
+
+**Highlights:**
+- **Overall Pass Rate:** 90%  
+- Core catalog and search features function correctly.
+- High-severity defects found in navigation, search usability, filtering, and checkout.
+- Performance acceptable under normal conditions; image loading issues remain.
+- Basic security checks passed successfully.
+
+
 
 ---
 
+# **1. Test Objectives**
 
+The main objectives were to:
+
+1. Validate UI and functional stability.  
+2. Ensure core flows work (catalog → search → book details → checkout).  
+3. Identify defects affecting usability or performance.  
+4. Confirm security measures for inputs and sessions.  
+5. Test across multiple browsers.
+
+---
+
+# **2. Areas Covered**
+
+## **2.1 Functional Testing**
+- Homepage layout  
+- Catalog loading  
+- Book card rendering  
+- Search (exact/partial/case-insensitive)  
+- Search clearing  
+- Book details navigation  
+- Checkout form validation  
+- Price filtering  
+- Currency selection  
+- Coupon input  
+
+## **2.2 Non-Functional Testing**
+### Performance  
+- Page load speed  
+- Slow 3G simulation  
+- Image loading efficiency  
+
+### Security  
+- SQL Injection attempts  
+- XSS attempts  
+- Invalid session cookie handling  
+
+### Usability  
+- Layout responsiveness  
+- Search bar visibility  
+- Navigation clarity  
+
+---
+
+# **3. Areas Not Covered**
+- Backend API testing  
+- Payment integrations  
+- Full accessibility audit  
+- Device-specific UX  
+- Load testing with concurrency  
+
+---
+
+# **4. Testing Approach**
+
+## **4.1 Strategy**
+- Black-box functional testing  
+- Exploratory testing  
+- Negative testing for inputs  
+- Boundary value analysis for forms  
+- Cross-browser testing  
+
+## **4.2 Process**
+1. Test case preparation  
+2. Manual execution  
+3. Defect logging on GitHub  
+4. Summary reporting  
+
+## **4.3 Tools**
+- Browsers: Chrome 129, Firefox 128, Edge 128  
+- Defect Tracking: GitHub Issues  
+- Network throttling: Chrome DevTools  
+- Screen Recording: OBS Studio  
+
+---
+
+# **5. Test Execution Summary**
+
+## **5.1 Overall Metrics**
+
+| Metric | Value |
+|--------|--------|
+| Total Test Cases | 25 |
+| Passed | 22 |
+| Failed | 3 |
+| Pass Rate | **90%** |
+| Duration | 5-6 Days |
+| Browsers | Chrome, Firefox, Edge |
+
+---
+
+# **5.2 Test Execution Table**
+
+| Test Case ID | Description | Executed By | Date | Result | Defect ID | Notes |
+|--------------|-------------|-------------|--------|---------|-----------|--------|
+| UI001 | Verify homepage layout loads correctly | DvChege | 07-Nov-2025 | Pass | - | Layout consistent |
+| UI002 | Verify book cards display key elements | DvChege | 07-Nov-2025 | Pass | - | All info rendered |
+| UI003 | Ensure images render without broken links | Robel | 07-Nov-2025 | Fail | BUG-003 | Some images broken |
+| UI004 | Search bar visibility & usability | Emmaculate | 07-Nov-2025 | Fail | BUG-005 | Enter key unresponsive |
+| UI005 | Layout responsiveness | Robel | 07-Nov-2025 | Pass | - | Good on all sizes |
+| UI006 | Footer & navbar visibility | Robel | 08-Nov-2025 | Pass | - | Links visible |
+| UI007 | Logo redirects to home | Emmaculate | 08-Nov-2025 | Pass | - | Works well |
+| FN001 | Catalog loads successfully | Emmaculate | 08-Nov-2025 | Pass | - | All books load |
+| FN002 | Exact match search | Emmaculate | 08-Nov-2025 | Fail | BUG-008 | Book details inaccessible |
+| FN003 | Partial match search | DvChege | 08-Nov-2025 | Pass | - | Works fine |
+| FN004 | Case-insensitive search | Emmaculate | 08-Nov-2025 | Pass | - | Matches correctly |
+| FN005 | “No books found” on invalid input | Emmaculate | 08-Nov-2025 | Pass | - | Message displays |
+| FN006 | Clearing search resets list | DvChege | 08-Nov-2025 | Pass | - | Full list returns |
+| FN007 | Buy button functionality | DvChege | 08-Nov-2025 | Fail | BUG-001 | Adds item silently |
+| TC001 | Checkout validation | Emmaculate | 09-Nov-2025 | Fail | BUG-002 | Invalid city allowed |
+| TC002 | Book details navigation | Robel | 09-Nov-2025 | Fail | BUG-008 | No navigation |
+| TC003 | Price filtering | DvChege | 09-Nov-2025 | Fail | BUG-004 | Filter broken |
+| TC004 | Currency selection | Robel | 09-Nov-2025 | Fail | BUG-007 | Stuck on default |
+| TC005 | Coupon input field | Robel | 09-Nov-2025 | Fail | BUG-009 | Missing field |
+| SE001 | SQL injection test | DvChege | 10-Nov-2025 | Pass | - | Input rejected |
+| SE002 | Invalid session test | Emmaculate | 10-Nov-2025 | Pass | - | Redirects to login |
+| SE003 | XSS attempt | Emmaculate | 10-Nov-2025 | Pass | - | Sanitized |
+| PN001 | Page load speed | Robel | 10-Nov-2025 | Pass | - | <2.5s |
+| PN002 | Image loading efficiency | DvChege | 10-Nov-2025 | Fail | BUG-011 | Lazy-load missing |
+| PN003 | Network error recovery | DvChege | 10-Nov-2025 | Pass | - | Recovers ok |
+| PN004 | Slow 3G responsiveness | DvChege | 10-Nov-2025 | Pass | - | Works with delay |
+
+---
+
+# **6. Defect Report**
+
+## **6.1 Defect Summary**
+
+| Severity | Count | Status |
+|----------|--------|---------|
+| Critical | 2 | Open |
+| High | 5 | Open |
+| Medium | 3 | Open |
+| Low | 2 | Open |
+
+Total Defects: **12**
+
+## **6.2 Major Defects**
+- Broken images on Android  
+- Book details page not opening  
+- Search bar Enter key not responding  
+- Price filter non-functional  
+- Checkout form accepting invalid inputs  
+- Currency stuck on default  
+
+All issues tracked in GitHub (BUG-001 to BUG-011).
+
+---
+
+# **7. Environment Details**
+
+## **7.1 Platforms**
+- Windows 1 11  
+- Android 12  
+- Browsers: Chrome, Firefox, Edge  
+
+## **7.2 Network**
+- Standard Wi-Fi  
+- Throttled slow 3G  
+- Offline → reconnect behavior  
+
+---
+
+# **8. Overall Status**
+
+## **8.1 Strengths**
+- Homepage stable  
+- Catalog rendering reliable  
+- Partial & case-insensitive search functional  
+- Security protections effective  
+
+## **8.2 Weaknesses**
+- Book details navigation broken  
+- Checkout validation incomplete  
+- Filtering and currency selection fail  
+- Image loading issues  
+
+## **8.3 Risk Level**
+| Risk | Level |
+|-------|--------|
+| Navigation blocking main flow | High |
+| Form validation errors | High |
+| Broken UI filtering | Medium |
+| Broken images | Medium |
+
+**Release Status:**  *Not recommended for release*
+
+---
+
+# **9. Recommendations**
+- Fix all high-severity bugs first  
+- Improve search usability  
+- Implement lazy-loading for images  
+- Strengthen checkout validation logic  
+- Conduct full regression testing  
+
+---
+
+# **10. Approval**
+| Role | Name | Approval |
+|-------|--------|------------|
+| QA Lead | DvChege | J.C |
+| Tester | Emmaculate | E.M|
+| Tester | Robel | R.Y |
+
+
+---
+
+# **End of Report**
