@@ -132,7 +132,7 @@ Execution results include pass/fail status and screenshots/video evidence.
 |---------|-------------|------------------|----------------|--------|
 | FR-O01 | Cart operations — add/remove/update with stock enforcement | TC-005, FN001, FN003 | DF-001 | Partial Failures |
 | FR-O02 | Checkout wizard / validation | TC001, TC002 | DF-004 | Fail |
-| FR-O03 | Payments — currency, Paystack init | N/A | None | Not Tested |
+| FR-O03 | Payments — currency, Paystack init | BUG 007 | BUG 007 |  Fail |
 | FR-O04 | Catalog / Book detail | TC004, FN002 | DF-002, DF-003 | Partial Failures |
 | FR-R01 | Returns — 7-day validation | N/A | None | Not Tested |
 | FR-N02 | Notifications — mark all read | N/A | None | Not Tested |
