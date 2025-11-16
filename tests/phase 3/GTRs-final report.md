@@ -57,9 +57,9 @@ Requirements for Phase 2 testing were based on **actual implemented features**.
 | Platform | Version | Notes |
 |---------|---------|-------|
 | Windows 10 / 11 | Chrome 142, Edge 128 | Primary testing environment |
-| macOS 14 (Sonoma) | Firefox 128 | Cross-browser validation |
+| macOS 14 | Firefox 128 | Cross-browser validation |
 | Android 13 | Chrome Mobile | Mobile UI checks |
-| iOS 17 | Safari Mobile | Responsiveness & touch testing |
+| iOS 26 | Safari Mobile | Responsiveness & touch testing |
 
 ## **3.2 Testing Tools Used**
 | Tool | Purpose |
