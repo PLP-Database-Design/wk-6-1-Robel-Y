@@ -1,7 +1,7 @@
 # Bookstore App – QA Testing Presentation Script
 
 **Team:** GTRs Testers  
-**Presenter:** Emmaculate & Josphat
+**Presenter:** Emmaculate & DvChege
 
 **Date:** November 2025 
 
@@ -28,7 +28,7 @@ This presentation summarizes our QA testing for the Bookstore Application, cover
 
 ### Tools Used
 - Browsers: Chrome 129, Firefox 128, Edge 128  
-- Devices: Windows 10/11, macOS 14, Android 12  
+- Devices: Windows 11, macOS 14, Android  
 - Tools: VS Code, Jira, Chrome DevTools and Github
 - Evidence stored in `/screenshots/` folder
 
@@ -129,5 +129,6 @@ This testing cycle enhanced the app's overall quality and aligned results with f
 
 Thank you for reviewing this presentation.
 **GTRs Testers**
+
 
 
