@@ -45,7 +45,7 @@ The Bookstore App allows users to:
 | Book Catalog Display | Implemented |
 | Search Function | Implemented |
 | Book Details Page | Not Implemented |
-| Cart & Checkout | Not Implemented |
+| Cart & Checkout |  Implemented |
 | Payments | Not Implemented |
 
 Requirements for Phase 2 testing were based on **actual implemented features**.
