@@ -129,7 +129,7 @@ Execution results include pass/fail status and screenshots/video evidence.
 | ID | Defect Description | Severity | Priority | Status |
 |----|--------------------|----------|----------|--------|
 | DF-001 | Buy button does nothing | Low | Low | Open |
-| DF-002 | Images stretch on some screens | Medium | Medium | Open |
+| DF-002 | Invalid city input | Medium | High | Open |
 | DF-003 | Search is case-sensitive | Medium | Medium | Open |
 | DF-004 | No book detail page | High | High | Logged |
 
