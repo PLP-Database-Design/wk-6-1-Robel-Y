@@ -144,31 +144,7 @@ Execution results include pass/fail status and screenshots/video evidence.
 
 ---
 
-# **5. Team Contributions & Scoring**
-
-## **5.1 Contribution Statement**
-- **DvChege**: Designed & documented test cases, executed tests, supported defect tracking, prepared report.  
-- **Emmaculate**: Created roles document, test plan, maintained defect log, logged defects into GitHub,, reviewed report.  
-- **Robel**: Executed tests, reviewed documentation, provided approvals.
-
-## **5.2 Approvals & Sign-Off**
-| Name | Role | Status | Signature |
-|------|------|--------|-----------|
-| DvChege | QA Lead | Approved | J.C |
-| Emma M | QA Tester | Approved | E.M |
-
----
-
-# **6. Appendix**
-Supporting materials included in `/screenshots/` and `/docs/` folders:
-- Test cases  
-- Defect logs  
-- Traceability matrix  
-- Environment and setup notes  
-
----
-
-# **7. Recommendations** 
+# **5. Recommendations** 
 
 ### High Priority Fixes
 - Fix book detail navigation  
@@ -182,12 +158,37 @@ Supporting materials included in `/screenshots/` and `/docs/` folders:
 - Add unit tests for search and filter logic  
 - Improve caching for mobile devices  
 
-# **8. Conclusion**
+# **6. Appendix**
+Supporting materials included in `/screenshots/` and `/tests/` folders:
+- Test cases  
+- Defect logs  
+- Traceability matrix  
+- Environment and setup notes  
+
+---
+
+# **7. Conclusion**
 Testing across three phases allowed the team to:
 - Understand current limitations of the Bookstore App  
 - Identify areas for improvement  
 - Highlight missing ecommerce functionality (cart, checkout, payments, book detail)  
 
 The system functions as a simple static catalog but requires enhancements for a complete user experience.
+
+
+# **8. Team Contributions & Scoring**
+
+## **8.1 Contribution Statement**
+- **DvChege**: Designed & documented test cases, executed tests, supported defect tracking, prepared report.  
+- **Emmaculate**: Created roles document, test plan, maintained defect log, logged defects into GitHub,, reviewed report.  
+- **Robel**: Executed tests, reviewed documentation, provided approvals.
+
+## **8.2 Approvals & Sign-Off**
+| Name | Role | Status | Signature |
+|------|------|--------|-----------|
+| DvChege | QA Lead | Approved | J.C |
+| Emma M | QA Tester | Approved | E.M |
+
+---
 
 **End of Final QA Report**  
