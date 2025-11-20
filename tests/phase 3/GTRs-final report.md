@@ -168,7 +168,21 @@ Supporting materials included in `/screenshots/` and `/docs/` folders:
 
 ---
 
-# **7. Conclusion**
+# **7. Recommendations** 
+
+### High Priority Fixes
+- Fix book detail navigation  
+- Make search bar responsive  
+- Strengthen form validations  
+- Add user feedback for cart actions   
+- Make all navbar links functional  
+
+### Additional Improvements
+- Add automated regression tests  
+- Add unit tests for search and filter logic  
+- Improve caching for mobile devices  
+
+# **8. Conclusion**
 Testing across three phases allowed the team to:
 - Understand current limitations of the Bookstore App  
 - Identify areas for improvement  
