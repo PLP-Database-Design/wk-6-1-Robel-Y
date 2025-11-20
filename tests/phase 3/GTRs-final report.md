@@ -109,14 +109,16 @@ Requirements for Phase 2 testing were based on **actual implemented features**.
 ## **4.1 Execution Summary**
 Execution results include pass/fail status and screenshots/video evidence.
 
-## **4.2 Final Execution Table**
-| Test Case ID | Result | Evidence | Tester |
-|--------------|--------|----------|--------|
-| TC-001 | Pass | screenshot | Emma  |
-| TC-002 | Pass | screenshot | Emma  |
-| TC-003 | Pass | screenshot | Emma |
-| TC-004 | Pass | screenshot | Emma  |
-| TC-005 | Pass | screenshot | Emma |
+## **4.2 Overall Test Case Metrics**
+
+| Metric | Value |
+|--------|--------|
+| Total Test Cases | 25 |
+| Passed | 22 |
+| Failed | 3 |
+| Pass Rate | **90%** |
+| Duration | 5-6 Days |
+| Browsers | Chrome, Firefox, Edge |
 
 ## **4.3 Defect Log Summary**
 | ID | Defect Description | Severity | Priority | Status |
