@@ -121,14 +121,10 @@ Execution results include pass/fail status and screenshots/video evidence.
 | Browsers | Chrome, Firefox, Edge |
 
 ## **4.3 Defect Log Summary**
-| Severity | Count | Status |
-|----------|--------|---------|
-| Critical | 4 | Open |
-| High | 5 | Open |
-| Medium | 3 | Open |
-| Low | 2 | Open |
-
-Total Defects: **14**
+- **Total Defects:** 14  
+- **Critical / Major:** 8  
+- **Minor / Medium:** 6  
+- **Primary Impact Areas:** Catalog, Cart/Checkout, Payments, Navigation, Admin console  
 
 | ID | Defect Description | Severity | Priority | Status |
 |----|--------------------|----------|----------|--------|
