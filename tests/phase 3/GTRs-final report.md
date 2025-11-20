@@ -121,14 +121,21 @@ Execution results include pass/fail status and screenshots/video evidence.
 | Browsers | Chrome, Firefox, Edge |
 
 ## **4.3 Defect Log Summary**
+| Severity | Count | Status |
+|----------|--------|---------|
+| Critical | 4 | Open |
+| High | 5 | Open |
+| Medium | 3 | Open |
+| Low | 2 | Open |
+
+Total Defects: **14**
+
 | ID | Defect Description | Severity | Priority | Status |
 |----|--------------------|----------|----------|--------|
 | DF-001 | Buy button does nothing | Low | Low | Open |
 | DF-002 | Images stretch on some screens | Medium | Medium | Open |
 | DF-003 | Search is case-sensitive | Medium | Medium | Open |
 | DF-004 | No book detail page | High | High | Logged |
-
-**Note:** All defects are logged and maintained in GitHub by Emmaculate
 
 ## **4.4 Traceability Matrix**
 | FR Code | Description | Related Test Cases | Defects Linked | Status |
