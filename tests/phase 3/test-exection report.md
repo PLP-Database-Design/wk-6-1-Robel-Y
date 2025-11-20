@@ -151,7 +151,7 @@ The main objectives were to:
 
 | Severity | Count | Status |
 |----------|--------|---------|
-| Critical | 2 | Open |
+| Critical | 4 | Open |
 | High | 5 | Open |
 | Medium | 3 | Open |
 | Low | 2 | Open |
